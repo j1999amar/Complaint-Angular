@@ -13,4 +13,7 @@ export class ApiService {
   searchUserId=(data:any)=>{
     return this.http.post('http://localhost:8080/userLogin',data)
   }
+  getUserData=(data:any)=>{
+    return this.http.post('http://localhost:8080/viewProfile',data)
+  }
 }
