@@ -9,5 +9,8 @@ export class ApiService {
   constructor(private http:HttpClient) { }
   addUser=(data:any)=>{
     return this.http.post('http://localhost:8080/userRegistration',data)
+  } 
+  searchUserId=(data:any)=>{
+    return this.http.post('http://localhost:8080/userLogin',data)
   }
 }
