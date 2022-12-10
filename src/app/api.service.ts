@@ -22,4 +22,7 @@ export class ApiService {
   viewComplaint=(data:any)=>{
     return this.http.post('http://localhost:8080/viewComplaint',data)
   }
+  viewAllComplaints=()=>{
+    return this.http.get('http://localhost:8080/viewAllComplaints')
+  }
 }
