@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 const myRouter:Routes=[
   {
     path:'',
@@ -29,7 +30,8 @@ const myRouter:Routes=[
     AdminLoginComponent,
     UserRegistrationComponent,
     UserLoginComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
