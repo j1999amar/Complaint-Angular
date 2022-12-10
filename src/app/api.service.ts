@@ -16,4 +16,9 @@ export class ApiService {
   getUserData=(data:any)=>{
     return this.http.post('http://localhost:8080/viewProfile',data)
   }
+  addComplaint=(data:any)=>{
+    return this.http.post('http://localhost:8080/addComplaint',data)
+
+    
+  }
 }
