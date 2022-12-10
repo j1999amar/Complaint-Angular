@@ -10,6 +10,7 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { UserLoginComponent } from './user-login/user-login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 const myRouter:Routes=[
   {
     path:'',
@@ -22,6 +23,10 @@ const myRouter:Routes=[
   {
     path:'userLogin',
     component:UserLoginComponent
+  },
+  {
+    path:'addComplaint',
+    component:AddComplaintComponent
   }
 ]
 @NgModule({
@@ -31,7 +36,8 @@ const myRouter:Routes=[
     UserRegistrationComponent,
     UserLoginComponent,
     AdminNavbarComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    AddComplaintComponent
   ],
   imports: [
     BrowserModule,
