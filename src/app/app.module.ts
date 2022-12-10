@@ -13,6 +13,7 @@ import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { ViewComplaintComponent } from './view-complaint/view-complaint.component';
+import { ViewAllComplaintsComponent } from './view-all-complaints/view-all-complaints.component';
 const myRouter:Routes=[
   {
     path:'',
@@ -37,6 +38,10 @@ const myRouter:Routes=[
   {
     path:'viewComplaint',
     component:ViewComplaintComponent
+  },
+  {
+    path:'viewAllComplaints',
+    component:ViewAllComplaintsComponent
   }
 ]
 @NgModule({
@@ -49,7 +54,8 @@ const myRouter:Routes=[
     UserNavbarComponent,
     AddComplaintComponent,
     ViewProfileComponent,
-    ViewComplaintComponent
+    ViewComplaintComponent,
+    ViewAllComplaintsComponent
   ],
   imports: [
     BrowserModule,

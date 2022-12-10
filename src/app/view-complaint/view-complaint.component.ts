@@ -18,7 +18,6 @@ export class ViewComplaintComponent {
     this.api.viewComplaint(data).subscribe(
       (response)=>{
         this.complaint=response
-        console.log(this.complaint)
       }
     )
 

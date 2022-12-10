@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./view-profile.component.css']
 })
 export class ViewProfileComponent {
-   userData:any={}
+   userData:any=[]
 
   constructor(private api:ApiService){
     let id=localStorage.getItem("userInfo")
@@ -15,9 +15,8 @@ export class ViewProfileComponent {
       "id":id
     }
     this.api.getUserData(data).subscribe(
-      (response)=>{
-        this.userData=response
-        console.log(this.userData[0])
+      (response:any)=>{
+        this.userData=response[0]
       }
     )
   }

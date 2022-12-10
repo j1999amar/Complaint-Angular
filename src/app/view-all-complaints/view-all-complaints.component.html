@@ -1,0 +1,23 @@
+<app-admin-navbar></app-admin-navbar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Complaint</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data ">
+        <td> {{i.name}}</td>
+        <td> {{i.phone}}</td>
+        <td> {{i.email}}</td>
+        <td> {{i.add_complaint}}</td>
+
+
+
+      </tr>
+    </tbody>
+  </table>
