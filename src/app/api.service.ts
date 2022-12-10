@@ -18,7 +18,8 @@ export class ApiService {
   }
   addComplaint=(data:any)=>{
     return this.http.post('http://localhost:8080/addComplaint',data)
-
-    
+  }
+  viewComplaint=(data:any)=>{
+    return this.http.post('http://localhost:8080/viewComplaint',data)
   }
 }

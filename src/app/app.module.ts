@@ -12,6 +12,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { ViewComplaintComponent } from './view-complaint/view-complaint.component';
 const myRouter:Routes=[
   {
     path:'',
@@ -32,6 +33,10 @@ const myRouter:Routes=[
   {
     path:'viewProfile',
     component:ViewProfileComponent
+  },
+  {
+    path:'viewComplaint',
+    component:ViewComplaintComponent
   }
 ]
 @NgModule({
@@ -43,7 +48,8 @@ const myRouter:Routes=[
     AdminNavbarComponent,
     UserNavbarComponent,
     AddComplaintComponent,
-    ViewProfileComponent
+    ViewProfileComponent,
+    ViewComplaintComponent
   ],
   imports: [
     BrowserModule,
